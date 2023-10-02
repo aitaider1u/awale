@@ -1,0 +1,11 @@
+---> positioner dans la directory
+/awaleIG/src/main/java
+---> compiler
+javac model/Serveur.java
+---> lancer
+java model/Serveur 10101
+
+
+client
+-----> javac model/Client.java
+-----> java model/Client 127.0.0.1 10101

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="661.0" maxWidth="1257.0" minHeight="378.0" minWidth="842.0" prefHeight="661.0" prefWidth="1257.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.awaleig.PlateauIG">
+   <children>
+      <VBox alignment="CENTER" layoutX="41.0" layoutY="106.0" prefHeight="515.0" prefWidth="1175.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="85.0" prefWidth="1140.0">
+               <children>
+                  <Label fx:id="textGameOver" alignment="CENTER" prefHeight="23.0" prefWidth="230.0">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="rejouer" mnemonicParsing="false" prefHeight="24.0" prefWidth="106.0" text="Rejouer" />
+               </children>
+            </VBox>
+            <HBox fx:id="hbox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="292.0" prefWidth="1113.0">
+               <children>
+                  <Label fx:id="scoreJoueur" alignment="CENTER" prefHeight="107.0" prefWidth="114.0" style="-fx-border-color: black; -fx-font-size: 20; -fx-border-radius: 100; -fx-border-color: #DEB887; -fx-border-width: 3;" text="Label">
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </Label>
+                  <GridPane fx:id="plateauIG" alignment="CENTER" maxHeight="260.0" maxWidth="778.0" minHeight="260.0" minWidth="778.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="260.0" prefWidth="778.0" style="-fx-background-color: #DEB887; -fx-background-radius: 20;">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" maxWidth="180.0" minWidth="10.0" prefWidth="121.0" />
+                        <ColumnConstraints halignment="CENTER" maxWidth="180.0" minWidth="10.0" prefWidth="121.0" />
+                        <ColumnConstraints halignment="CENTER" maxWidth="180.0" minWidth="10.0" prefWidth="121.0" />
+                        <ColumnConstraints halignment="CENTER" maxWidth="180.0" minWidth="10.0" prefWidth="121.0" />
+                        <ColumnConstraints halignment="CENTER" maxWidth="180.0" minWidth="10.0" prefWidth="121.0" />
+                        <ColumnConstraints halignment="CENTER" maxWidth="180.0" minWidth="0.0" prefWidth="121.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="138.0" minHeight="10.0" prefHeight="106.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="154.0" minHeight="0.0" prefHeight="105.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+                  <Label fx:id="scoreMachine" alignment="CENTER" prefHeight="107.0" prefWidth="114.0" style="-fx-border-color: #DEB887; -fx-font-size: 20; -fx-border-radius: 100; -fx-border-width: 3;" text="Label">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="176.0" prefWidth="1175.0">
+               <children>
+                  <Label fx:id="details" alignment="CENTER" contentDisplay="CENTER" maxHeight="159.0" maxWidth="457.0" minHeight="159.0" minWidth="457.0" prefHeight="159.0" prefWidth="457.0" style="-fx-border-color: Black; -fx-border-insets: 4; -fx-border-width: 3; -fx-border-radius: 10;">
+                     <HBox.margin>
+                        <Insets right="63.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="showButton" mnemonicParsing="false" text="Cacher" />
+               </children>
+               <padding>
+                  <Insets right="-108.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

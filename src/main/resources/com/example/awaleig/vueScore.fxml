@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="327.0" prefWidth="134.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.awaleig.VueScore">
+   <children>
+      <VBox layoutX="8.0" layoutY="4.0" prefHeight="311.0" prefWidth="126.0">
+         <children>
+            <VBox alignment="CENTER" maxHeight="170.0" maxWidth="126.0" minHeight="170.0" minWidth="126.0" prefHeight="170.0" prefWidth="126.0">
+               <children>
+                  <Label style="-fx-font-size: 18;" text="Machine" />
+                  <Label fx:id="scoreMachine" style="-fx-font-size: 18;" text="0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="161.0" prefWidth="126.0">
+               <children>
+                  <Label style="-fx-font-size: 18;" text="Joueur" />
+                  <Label fx:id="scoreJoueur" style="-fx-font-size: 18;" text="0" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
